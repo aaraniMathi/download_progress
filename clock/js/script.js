@@ -1,5 +1,6 @@
 
-
+var dateTime = new Date()
+console.log(dateTime)
 let ampm=document.getElementById("ampm")
 
 function displayTime(){
