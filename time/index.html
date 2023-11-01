@@ -1,0 +1,43 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>SET</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<style>
+  p{
+  color:red;
+  font-size:20px;
+  justify-content:center;
+  display:flex;
+  }
+</style>
+<body>
+    <span id="time"></span>
+
+<script>
+
+     let time=document.getElementById("time")
+	 let incr=0;
+	 function add(){
+	    incr++;
+		let val=document.createElement("p");
+		time.appendChild(val);
+		val.innerHTML="Welcome All";
+		}
+		
+
+        let stop=setInterval(()=>{
+		    if(incr==5){
+			    clearInterval(stop);
+			}
+			else{
+			 add()
+			 }
+		},2000)	 
+
+</script>
+</body>
+</html>
